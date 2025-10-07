@@ -1,6 +1,11 @@
 import pandas as pd
 import os
 import glob
+import sys
+
+# Fix Windows encoding issues
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
 
 def clean_csv(file_path):
     """Clean a single CSV file"""
@@ -46,11 +51,12 @@ def main():
             output_path = os.path.join('cleaned_data', filename)
             cleaned_df.to_csv(output_path, index=False)
             
-            print(f"✓ Cleaned {filename} - Rows: {len(cleaned_df)}")
+            print(f"[SUCCESS] Cleaned {filename} - Rows: {len(cleaned_df)}")
         except Exception as e:
-            print(f"✗ Error cleaning {csv_file}: {str(e)}")
+            print(f"[ERROR] Error cleaning {csv_file}: {str(e)}")
+            raise  # Re-raise to fail the build
     
-    print("\nCleaning completed!")
+    print("\nCleaning completed successfully!")
 
 if __name__ == "__main__":
     main()
