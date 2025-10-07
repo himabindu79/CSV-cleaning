@@ -1,0 +1,24 @@
+Name , Age , City , Salary , Department 
+John Doe,28,New York,75000,Engineering
+Jane Smith ,32, Los Angeles ,85000,Marketing
+ Bob Johnson,45,Chicago,95000,Sales
+Alice Williams,29,Houston,72000,Engineering
+John Doe,28,New York,75000,Engineering
+Charlie Brown, ,Miami,68000,HR
+,,,,
+David Lee,35,Seattle,  ,Engineering
+Emma Davis,27, Boston ,78000,Marketing
+  Frank Miller  ,41,Denver,88000,Sales
+Grace Wilson,33,Austin,82000,Marketing
+,,,,
+Henry Taylor,38,Phoenix,91000,Engineering
+Ivy Anderson,26,Portland,  70000  ,HR
+Jack Thomas,44,San Diego,97000,Sales
+ Karen White ,31,Dallas,79000,Marketing
+Leo Martinez,29,San Jose,  ,Engineering
+Mia Garcia,36,Columbus,86000,HR
+,,,,
+Nina Rodriguez,27,Charlotte,73000,Engineering
+Oscar Lopez,42,Indianapolis,94000,Sales
+Paula Hill,30,San Francisco,105000,Engineering
+Quinn Scott,34,Seattle,  ,Marketing
